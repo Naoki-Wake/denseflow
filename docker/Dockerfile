@@ -5,7 +5,7 @@ FROM nvidia/cuda:${CUDA}-cudnn${CUDNN}-devel-ubuntu18.04
 
 ARG OPENCV="4.5.2"
 # "Pascal" "Volta" "Turing" "Ampere"
-ARG CUDA_GENERATION="Pascal"
+ARG CUDA_GENERATION="Volta"
 
 RUN apt update \
     && apt install -y git cmake wget software-properties-common nasm yasm libx264-dev libx265-dev libvpx-dev libboost-all-dev ffmpeg libavcodec-dev libavformat-dev libavutil-dev libblas-dev liblapack-dev libswscale-dev libtiff-dev libdc1394-22-dev libpng-dev libavresample-dev ccache libgflags-dev libhdf5-dev liblapack-dev libeigen3-dev libgoogle-glog-dev libfreetype6-dev \
